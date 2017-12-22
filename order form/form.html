@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>order form</title>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="form_.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css"> 
+
+</head>
+
+<body>
+<h1> Place your Order </h1>
+
+
+<div id="orderform">
+
+<ul id="form">
+	
+	<li> 
+		<h3> Login : </h3>
+		
+		<form id="form_" action="names.xml" method="GET">
+			<label> Username*</label>
+			<input id="Username" type="text" name="username"  placeholder="Type here">
+			
+			<label> Password*</label>
+			<input id="pass" name="Password"  input type="password"  placeholder="Type here">
+			
+			
+			</li>
+			<li>
+			<h3> Payment : </h3>
+			
+			
+				<label> Payment method</label>
+				<select id="mySelect" >
+  <option value="Payment on pick up">Payment on pick up</option>
+  <option value="Credit/DebitCard">Credit/DepitCard</option>
+  <option value="Bank Transfer/Deposit">Bank Transfer/Deposit</option>
+  
+</select>
+
+					
+					
+					<div id="extras">
+					<dl id="payment_extras">
+					<dt>
+
+				<label> Type of card</label>
+				<select id="type_of_card" >
+					<option value ="Visa">Visa</option>
+					<option value ="MasterCard">MasterCard</option>
+					</select>
+					
+					</dt>
+					
+					
+						
+						
+						<dt>
+						<label> Card Number:*</label>
+						<input id="card_number" name="CardNumber: "  placeholder="Type here"></dt>
+						
+						<dt>
+						<label>Expiration date: </label>
+						<input id="exp" type="month" name="bdaymonth">
+						
+						</dt>
+						</dl>
+						</div>
+						</li>
+						<li>
+						<h3> Order information : </h3>
+						
+						
+						<label> Name:*</label>
+						<input id="name" name="Name: "  placeholder="Type here">
+						<div id="suggestion">
+
+						</div>
+						<label> Adress:*</label>
+						<input id="adress" name="Address: "  placeholder="Type here">
+						<div id ="map" style="width:439px;height:380px;"></div>
+						
+						<label> E-mail:*</label>
+						<input id="email" name "E-mail: "  placeholder="Type here">
+						
+						<label> Telephone:* </label>
+						<input id="tel" name "Telephone: " input type="tel" placeholder="Type here">
+						
+						<label> Delivery Comments: </label>
+						<input id="area" name "Delivery comments: " input type="textarea" placeholder="Type here">
+						
+						</li>
+						<li>
+						<h3> Coupon: </h3>
+						
+						
+						<label> Coupon Code: </label>
+						<input id="coupon" name="coupon" placeholder= "Type here">
+						
+						</li>
+								
+								</ul>
+						</div>
+						
+						
+						
+						<br>
+						
+						
+						<input id="check" type="checkbox" name="terms"   value="terms"/> I agree with the  <a href="https://www.google.com/policies/terms/">terms*</a>
+						<br>
+						
+				<button id="reset" type="button">Reset</button><br>
+				<input id="submit_" type="submit" value="Submitt">
+						
+						
+						
+						
+						</form>
+						
+						
+						
+						
+		
+	
+	
+	
+		
+
+
+</body>
+
+</html> 
